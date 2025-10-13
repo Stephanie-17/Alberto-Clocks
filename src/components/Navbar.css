@@ -12,6 +12,7 @@
  margin: 0 auto;
 }
 .mob-nav-items{
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +26,7 @@
   position: fixed;
   top: -11px;
   right: 0;
-  background-color: #a1a1a632;;
+  background-color: #a1a1a655;;
   z-index: 50;
   transform: translateY(0);
   transition: transform 0.5s;
@@ -41,7 +42,7 @@
   right: 0;
   bottom: 0;
   opacity: 1;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
   width: 100vw;
   z-index: 40;
 
@@ -51,8 +52,9 @@
   display: none;
 }
 .mob-nav-items a{
+  font-size: 21px;
   text-decoration: none;
-  color: inherit;
+  color: #F5F5F5;
   cursor: pointer;
   transition: background-color 0.2s ;
 }
