@@ -1,9 +1,13 @@
+.nav-sect{
+  font-size: 19px;
+ padding: 8px;
+  width: 98%;
+}
 .nav-cont{
   display: flex;
  justify-content: space-between;
- font-size: 21px;
- padding: 8px;
- width: 90%;
+
+ 
  align-items: center;
  margin: 0 auto;
 }
@@ -64,10 +68,13 @@
   align-self: flex-start;
 }
 .menu-btn{
+  position: relative;
   align-self: center;
   width: 30px;
   padding: 3px;
   cursor: pointer;
+  right: 0;
+  
 }
 .close-btn{
   position: absolute;
@@ -78,6 +85,7 @@
 .nav-items{
   display: flex;
   gap: 25px;
+display: none;
 }
 .nav-items a{
   text-decoration: none;
@@ -103,12 +111,23 @@
   width: 100%;
 }
 
+
+
+
 @media (min-width:1000px) {
   .mobile-nav{
     display: none;
   }
   .nav-cont{
     width: 95%;
+    padding-left: 20px;
+  }
+  .nav-items{
+    display: flex;
+  }
+  .nav-sect{
+    display: flex;
+    align-items: center;
   }
 }
 

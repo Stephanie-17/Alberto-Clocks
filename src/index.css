@@ -52,11 +52,11 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  font-family: montserrat;
   background-color: #FFF2E3;
   cursor: pointer;
   color: #0C0E19;
-  transition: border-color 0.25s;
+  transition: background-color 0.5s;
 }
 button:hover {
   background-color: #C49A6C;
@@ -66,7 +66,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -77,4 +77,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

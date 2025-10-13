@@ -4,6 +4,7 @@ import { useState } from "react";
 const Navbar = () => {
 	const [menu, setMenu] = useState(false)
 	return (
+		<div className="nav-sect">
 		<div className="nav-cont">
 			<img
 				className="logo"
@@ -34,7 +35,9 @@ const Navbar = () => {
 				<div className={`overlay ${!menu && 'remove-overlay'} `}></div>
 			</div>
 
-			<div className="desktop-nav">
+			
+		</div>
+		<div className="desktop-nav">
 				<div className="nav-items">
 					<a href="">Products</a>
 					<a href="">Technology</a>
