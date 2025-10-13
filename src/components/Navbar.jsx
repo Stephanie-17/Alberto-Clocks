@@ -33,6 +33,18 @@ const Navbar = () => {
 				</div>
 				<div className={`overlay ${!menu && 'remove-overlay'} `}></div>
 			</div>
+
+			<div className="desktop-nav">
+				<div className="nav-items">
+					<a href="">Products</a>
+					<a href="">Technology</a>
+					<a href="">Store Locator</a>
+					<a href="">Support</a>
+					<a href="">About</a>
+					<a href="">Contact</a>
+					<a href="">Gallery</a>
+				</div>
+			</div>
 		</div>
 	);
 };

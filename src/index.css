@@ -1,6 +1,7 @@
  :root {
   font-family: Open sans, system-ui,;
   color: #A1A1A6;
+  background-color: #0C0E19
   /* line-height: 1.5;
   font-weight: 400;
 
@@ -30,7 +31,7 @@ body {
   /* min-width: 320px;
   min-height: 100vh; */
   /* background-color: #0C0E19; */
-  background: radial-gradient(circle at center, #2f3850 0%, #0C0E19 90%);
+  /* background: radial-gradient(circle at center, #2f3850 0%, #0C0E19 90%); */
 }
 
 h1,h2,h3,h4,h5,h6 {
