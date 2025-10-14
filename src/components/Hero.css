@@ -4,7 +4,7 @@
   
 }
 .hero{
-  background: radial-gradient(circle at bottom , #262d40 0%, #0C0E19 70%);
+  background: radial-gradient(circle at bottom , #262d40 0%, #030A16 70%);
   display: flex;
   flex-direction: column;
   align-items: center;

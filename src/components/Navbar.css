@@ -1,7 +1,7 @@
 .nav-sect{
   font-size: 19px;
  padding: 8px;
-  width: 98%;
+ 
 }
 .nav-cont{
   display: flex;
@@ -21,7 +21,7 @@
   position: relative;
   padding-top: 20px;
   margin-top: 10px;
-  width: 100vw;
+  width: 80vw;
   height: 100%;
   position: fixed;
   top: -11px;
@@ -88,6 +88,7 @@
   display: flex;
   gap: 25px;
 display: none;
+align-items: flex-start;
 }
 .nav-items a{
   text-decoration: none;
