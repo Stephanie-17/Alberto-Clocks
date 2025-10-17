@@ -1,7 +1,7 @@
-.contact-page {
+/* .contact-page {
   /* background: linear-gradient(135deg, #b2794a 0%, #ebc0a5 100%); */
   
-  min-height: 100vh;
+  /* min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,7 +165,7 @@ color: #A1A1A6;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .contact-container {
     padding: 40px 25px;
   }
@@ -233,5 +233,108 @@ color: #A1A1A6;
   .submit-btn {
     padding: 12px 24px;
     font-size: 0.95rem;
+  }
+} */ 
+
+
+/* ====== BASE STYLES ====== */
+.contact-section {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  /* background: linear-gradient(135deg, #111, #1c1c1c); */
+  color: #f5f5f5;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.contact-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e0b973;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.contact-details {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 25px 0;
+  text-align: left;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.contact-details p {
+  margin: 8px 0;
+}
+
+.contact-details strong {
+  color: #d9a441;
+}
+
+.contact-form-note {
+  font-size: 1.05rem;
+  margin-top: 15px;
+  color: #f2d98d;
+}
+
+/* ====== RESPONSIVE STYLES ====== */
+
+/* Tablets and small laptops */
+@media (max-width: 900px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-intro,
+  .contact-details,
+  .contact-form-note {
+    font-size: 1rem;
+  }
+
+  .contact-container {
+    max-width: 90%;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .contact-section {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .contact-intro {
+    font-size: 0.95rem;
+  }
+
+  .contact-details {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .contact-form-note {
+    font-size: 0.9rem;
   }
 }

@@ -5,11 +5,10 @@ const Hero = () => {
     <div className='hero-cont'>
       <div className="hero">
         <div className="hero-text">
-          <h1>Precision Engineered for Every Moment.</h1>
-          <p>Discover a collection where innovation meets artistry. Alberto Clocks unites advanced watch technology with meticulous detailing for those who value more than time.</p>
-          <button className='btn hero-btn'>Explore Now !</button>
+          <h1>Timeless Precision, Modern Elegance</h1>
+          <p>Discover the art of horology with Alberto Watch Company, where traditional craftsmanship meets contemporary design.</p>
+          <button className='btn hero-btn'> Explore Our Collection</button>
         </div> 
-         <img className='hero-img' src="/hero.png" alt="" />
       </div>
     </div>
   )

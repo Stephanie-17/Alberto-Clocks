@@ -1,0 +1,112 @@
+.tech-cont{
+  padding: 8px;
+  
+}
+.tech-head{
+  padding: 9px;
+}
+.tech-pg{
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 90px;
+  animation: fadeInDown 1.4s ease forwards;
+}
+.tech-grid{
+  background-color: black;
+  padding: 10px;
+  padding-top: 30px;
+  margin-top: 20px;
+  animation: fadeInDown 1.4s ease forwards;
+}
+.watch-details{
+  width: 100%;
+}
+.watch-details h3 {
+  font-size: 30px; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: -0.5px; /* tracking-tight */
+  color: #f5f5f5; /* text-text-light */
+  margin: 0;
+}
+
+.watch-image {
+  width: 300px; 
+  border-radius: 12px; 
+  background-color: #f3f3f3; 
+  object-fit: cover; 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s ease-in-out; 
+  display: block;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.watch-image:hover {
+  transform: scale(1.05); /* hover:scale-105 */
+}
+.materials-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  
+  padding: 0;
+  animation: fadeInDown 1s ease forwards;
+  gap: 7px;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+/* Larger screens (sm:text-4xl) */
+
+.watch-details p {
+  margin-top: 24px; /* mt-6 */
+  font-size: 18px; /* text-lg */
+  line-height: 32px; /* leading-8 */
+  color: rgba(245, 245, 245, 0.7); /* text-text-light/70 */
+  max-width: 800px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (min-width: 640px) {
+  .watch-details h3 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width:900px) {
+  .tech-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap:70px ;
+    padding-left: 15px;
+    border-radius: 20px;
+    box-shadow: -10px -14px 12px black;
+  }
+  .watch-details{
+    text-align: left;
+  }
+  .watch-image{
+    margin-bottom: 0;
+    width: 400px;
+  }
+}
+@media (min-width:1100px) {
+  .tech-grid{
+    width: 1090px;
+    margin: 0 auto;
+  }
+}

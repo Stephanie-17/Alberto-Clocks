@@ -1,0 +1,18 @@
+.gallery-cont{
+  padding: 10px;
+}
+.watches{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+.watch-img{
+  border: 2px solid #ECBEA6;
+  transition: transform 0.9s;
+}
+.watch-img:hover{
+  transform: translateY(-20px);
+}

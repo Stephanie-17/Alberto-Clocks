@@ -1,7 +1,9 @@
  :root {
-  font-family: Open sans, system-ui,;
-  color: #A1A1A6;
-  background-color: #030A16
+  font-family:  sans-serif,;
+  color: #ffffff;
+  background-color:  #0A0F24
+  /* background: linear-gradient(135deg, #111111, #474747, #000000 70%); */
+
   /* line-height: 1.5;
   font-weight: 400;
 
@@ -37,9 +39,9 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-size: 3.2em;
   line-height: 1.1;
-  font-family: Poppins;
+  font-family: open sans;
   font-weight: 600;
-  color: #C49A6C;
+  color: #e4bb8e;
 }
 p {
   font-family: open sans;
