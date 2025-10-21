@@ -1,7 +1,10 @@
 import React from 'react'
+import Gallery from './Gallery.jsx'
 import './Hero.css'
+import Technology from './Technology.jsx'
 const Hero = () => {
   return (
+    <>
     <div className='hero-cont'>
       <div className="hero">
         <div className="hero-text">
@@ -10,7 +13,10 @@ const Hero = () => {
           <button className='btn hero-btn'> Explore Our Collection</button>
         </div> 
       </div>
+      
     </div>
+    <Technology />
+    </>
   )
 }
 

@@ -6,12 +6,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 25px;
   margin-top: 50px;
 }
 .watch-img{
-  border: 2px solid #ECBEA6;
+  width: 250px !important;
+  border: 2px solid #ECBEA6 !important;
   transition: transform 0.9s;
+  border-radius: 0 !important;
+
 }
 .watch-img:hover{
   transform: translateY(-20px);

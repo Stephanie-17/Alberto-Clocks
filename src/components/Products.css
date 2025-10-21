@@ -33,6 +33,8 @@
 .filter-btn{
   margin-bottom: 0;
   padding-bottom: 13px;
+  cursor: pointer;
+  transition: color 0.5s;
 }
 .active{
   position: relative;

@@ -8,6 +8,8 @@ import Technology from './components/Technology'
 import StoreLocator from './components/StoreLocator'
 import Gallery from './components/Gallery'
 import { BrowserRouter,Routes,Route } from "react-router"
+import Footer from './components/Footer'
+import ScrollingTimeTicker from './components/ScrollingTimeTicker'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
 
 
       </Routes>
+      <ScrollingTimeTicker/>
+      <Footer />
     </BrowserRouter>
    
     </>

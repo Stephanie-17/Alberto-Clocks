@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router"; 
+import VisitorCounter from "./VisitorCounter";
 
 const Navbar = () => {
 	const [menu, setMenu] = useState(false);
@@ -8,11 +9,14 @@ const Navbar = () => {
 	return (
 		<div className="nav-sect">
 			<div className="nav-cont">
-				<img
+				<Link to='/'>
+				   <img
 					className="logo"
 					src="/Logo.svg"
 					alt="Albert watch company clocks logo"
 				/>
+				</Link>
+				
 
 				{/* Desktop Navigation */}
 				<div className="desktop-nav">
@@ -26,7 +30,7 @@ const Navbar = () => {
 					</div>
 				</div>
 
-				<p className="visitor-count">Visitor Count: 21</p>
+				<VisitorCounter />
 
 				{/* Mobile Navigation */}
 				<div className="mobile-nav">
