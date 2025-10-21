@@ -3,15 +3,7 @@ import './Support.css'
 
 const About = () => {
   return (
-//     <div className='about-cont'>
-//       <h4 className='heading'>About Us</h4>
-//       <p className='about-pg'>At Alberto Watch Company, we believe that time is more than just seconds passing — it’s a story unfolding.
-// For over a decade, we’ve been dedicated to the art of precision, offering an exceptional range of luxury timepieces that blend craftsmanship, innovation, and timeless design.
-// Our collection features globally renowned brands such as Rolex, Citizen, Bulova, and Michael Kors, alongside carefully curated vintage and smart watch selections. Whether you seek elegance, performance, or heritage — Alberto brings you a watch that reflects who you are.
-// Beyond retail, we provide full-service watch repair, maintenance, and appraisals, ensuring your timepiece remains as perfect as the moment you bought it.
-// Alberto Watch Company — Where every second counts.
-// </p>
-//     </div>
+
 <section id="support-us" class="support-section">
   <div class="support-container">
     <h2 class="support-title heading">Support Us</h2>

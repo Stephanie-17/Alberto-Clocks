@@ -51,6 +51,9 @@ const Navbar = () => {
 							alt="close-menu-btn"
 						/>
 
+						<Link to="/" onClick={() => setMenu(false)}>
+							Home
+						</Link>
 						<Link to="/products" onClick={() => setMenu(false)}>
 							Products
 						</Link>
@@ -63,14 +66,13 @@ const Navbar = () => {
 						<Link to="/support" onClick={() => setMenu(false)}>
 							Support
 						</Link>
-						<Link to="/">About</Link>
 						<Link to="/contact" onClick={() => setMenu(false)}>
 							Contact
 						</Link>
 						<Link to="/gallery" onClick={() => setMenu(false)}>
 							Gallery
 						</Link>
-						<p>Visitor Count: 21</p>
+						<VisitorCounter />
 					</div>
 
 					<div className={`overlay ${!menu && "remove-overlay"}`}></div>

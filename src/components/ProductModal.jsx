@@ -23,7 +23,12 @@ const ProductModal = ({ watch, onClose }) => {
            <button onClick={handleClick}>Buy Now</button>
           </div>
           
-          <button className="close-btn" onClick={onClose}>X</button>
+          <img
+							onClick={onClose}
+							src="/close-btn.svg"
+							className="close-btn"
+							alt="close-menu-btn"
+						/>
           <div
 				class="success"
 				data-testid="test-contact-success"

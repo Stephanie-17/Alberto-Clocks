@@ -70,19 +70,7 @@ strong{
   color: #9d6931;
 }
 
-.close-btn {
-  margin-top: 15px;
-  background-color: #d32f2f;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  
-  padding: 0;
- width: 50px;
- height: 30px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+
 
 .success{
   position: absolute;
@@ -110,9 +98,7 @@ strong{
 }
 
 
-.close-btn:hover {
-  background-color: #b71c1c;
-}
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
