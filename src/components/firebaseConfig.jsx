@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD683gsRZoP4t6EOIHwP0arGmGCQtanLMA",
-  authDomain: "visitor-counter-2e645.firebaseapp.com",
-  projectId: "visitor-counter-2e645",
-  storageBucket: "visitor-counter-2e645.firebasestorage.app",
-  messagingSenderId: "57911435321",
-  appId: "1:57911435321:web:f6f1bfb1b9f2cd89bcade8",
-  measurementId: "G-P8YTKEWLY6"
+	apiKey: "AIzaSyDGL86742YS3W_8bMSYDC33OydgSmDYHko",
+	authDomain: "visitor-counter-54f2e.firebaseapp.com",
+  databaseURL: "https://console.firebase.google.com/project/visitor-counter-54f2e/database/visitor-counter-54f2e-default-rtdb/data/~2F",
+	projectId: "visitor-counter-54f2e",
+	storageBucket: "visitor-counter-54f2e.firebasestorage.app",
+	messagingSenderId: "331149501672",
+	appId: "1:331149501672:web:fb5b8b162cf0ca0d25555d",
 };
 
 const app = initializeApp(firebaseConfig);

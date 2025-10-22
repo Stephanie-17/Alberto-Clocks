@@ -10,6 +10,7 @@ import Gallery from './components/Gallery'
 import { BrowserRouter,Routes,Route } from "react-router"
 import Footer from './components/Footer'
 import ScrollingTimeTicker from './components/ScrollingTimeTicker'
+import VisitorCounter from './components/VisitorCounter'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 
       </Routes>
       <ScrollingTimeTicker/>
+      <VisitorCounter/>
       <Footer />
     </BrowserRouter>
    
