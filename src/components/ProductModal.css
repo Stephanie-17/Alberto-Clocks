@@ -1,111 +1,113 @@
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  animation: fadeIn 0.3s ease;
-  color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+	animation: fadeIn 0.3s ease;
+	color: black;
 }
 
 .modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
- justify-content: flex-start;
-  animation: popIn 0.3s ease;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	animation: popIn 0.3s ease;
+	width: 90%;
+	max-width: 400px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
 }
 
 .modal-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 20px;
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 20px;
 }
 
-.modal-details{
-  width: 100%;
-  display: flex;
-  /* text-align: left; */
-  /* align-items: center; */
-  flex-direction: column;
-  
+.modal-details {
+	width: 100%;
+	display: flex;
+	/* text-align: left; */
+	/* align-items: center; */
+	flex-direction: column;
 }
-.modal-details p,.buy p{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.modal-details p,
+.buy p {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-strong{
-  font-size: 20px;
+strong {
+	font-size: 20px;
 }
-.price{
-  font-weight: 600;
-  font-size: 20px;
-  color: #a95a06;
-
+.price {
+	font-weight: 600;
+	font-size: 20px;
+	color: #a95a06;
 }
-.buy button{
-  width: 100%;
-  background-color: #e4bb8e;
-  font-weight: bold;
+.buy button {
+	width: 100%;
+	background-color: #e4bb8e;
+	font-weight: bold;
 }
 
 .modal-details h2 {
-  font-size: 25px;
-  margin-bottom: 10px;
-  color: #9d6931;
+	font-size: 25px;
+	margin-bottom: 10px;
+	color: #9d6931;
 }
 
-
-
-.success{
-  position: absolute;
-  right: 0;
-  top: 60px;
-  background-color: rgb(170, 247, 200);
-  border: 2px solid rgb(0, 228, 0);
-  color:green;
-  margin-top: 10px;
-  border-radius: 10px;
-  padding: 5px;
-  width: 400px;
-  font-size: 20px;
-  text-align: center;
-  transform: translateX(100%);
-  transition: transform 0.6s ;
-  display: none;
-  transition: display 0.6s;
+.success {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	background-color: rgb(170, 247, 200);
+	border: 2px solid rgb(0, 228, 0);
+	color: green;
+	margin-top: 10px;
+	border-radius: 10px;
+	padding: 5px;
+	width: 400px;
+	font-size: 20px;
+	text-align: center;
+	transform: translateX(100%);
+	transition: transform 0.6s;
+	display: none;
+	transition: display 0.6s;
 }
 .successful {
-  display: block;
-  transform: translateX(-20px);
-  
-  
+	display: block;
+	transform: translateX(-20px);
 }
 
-
-
-
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes popIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+	from {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
 }

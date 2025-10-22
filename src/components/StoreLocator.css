@@ -1,111 +1,106 @@
 .store-locator {
-  min-height: 100vh;
-  background-color: #000;
-  color: #fff;
-  padding: 3rem 1.5rem;
+	min-height: 100vh;
+	background-color: #000;
+	color: #fff;
+	padding: 3rem 1.5rem;
 }
 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  
+	max-width: 1400px;
+	margin: 0 auto;
 }
 
-/* Header */
 .header {
-  text-align: center;
-  margin-bottom: 3rem;
+	text-align: center;
+	margin-bottom: 3rem;
 }
 
 .header h1 {
-  font-size: 3.75rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+	font-size: 3.75rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
 }
 
 .subtitle {
-  color: #9ca3af;
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
+	color: #9ca3af;
+	font-size: 1.125rem;
+	margin-bottom: 1.5rem;
 }
 
-/* Content */
 .store-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
 }
 
 .store-card {
-  background-color: #18181b;
-  border: 1px solid #020243;
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
+	background-color: #18181b;
+	border: 1px solid #020243;
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
 .store-card:hover {
-  border-color: #3f3f46;
-  transform: translateY(-2px);
+	border-color: #3f3f46;
+	transform: translateY(-2px);
 }
 
 .store-card h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0 0 0.75rem 0;
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin: 0 0 0.75rem 0;
 }
 
 .address {
-  color: #9ca3af;
-  font-size: 0.875rem;
-  margin-bottom: 0.75rem;
+	color: #9ca3af;
+	font-size: 0.875rem;
+	margin-bottom: 0.75rem;
 }
 
 .store-details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  font-size: 0.875rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	font-size: 0.875rem;
 }
 
 .store-details p {
-  margin: 0;
+	margin: 0;
 }
 
 .label {
-  font-weight: 600;
-  color: #fff;
+	font-weight: 600;
+	color: #fff;
 }
 
 .value {
-  color: #9ca3af;
+	color: #9ca3af;
 }
-@media (min-width:500px) {
-  .store-list{
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .store-locator{
-    border-radius: 20px;
-   
-  }
+@media (min-width: 500px) {
+	.store-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.store-locator {
+		border-radius: 20px;
+	}
 }
-@media (min-width:700px) {
-    .store-locator{
-      min-height: 70vh;
+@media (min-width: 700px) {
+	.store-locator {
+		min-height: 70vh;
+	}
+}
 
-    }
-}
-/* Responsive */
 @media (max-width: 767px) {
-  .header h1 {
-    font-size: 2.5rem;
-  }
+	.header h1 {
+		font-size: 2.5rem;
+	}
 
-  .store-locator {
-    padding: 2rem 1rem;
-  }
+	.store-locator {
+		padding: 2rem 1rem;
+	}
 }

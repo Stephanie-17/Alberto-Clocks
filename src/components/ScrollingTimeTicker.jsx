@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import './Time.css'
+import "./Time.css";
 
 function ScrollingTimeTicker() {
 	const [time, setTime] = useState("");
@@ -18,13 +18,11 @@ function ScrollingTimeTicker() {
 
 	return (
 		<div className="App">
-			{/*Scrolling Ticker */}
 			<div className="ticker">
-				<span style={{fontFamily: 'orbitron'}}>
+				<span style={{ fontFamily: "orbitron" }}>
 					📅 {date} | 🕒 {time} | 📍 Lagos, Nigeria
 				</span>
 			</div>
-
 		</div>
 	);
 }

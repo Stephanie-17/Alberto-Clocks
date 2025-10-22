@@ -1,44 +1,58 @@
-import React, { useState, useEffect } from "react";
- // install react-icons if you haven’t
+import { useState, useEffect, useRef } from "react";
+import { db } from "./firebaseConfig";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 
-function VisitorCounter() {
-  const [count, setCount] = useState(null);
-  const [error, setError] = useState(false);
+export default function VisitorCounter() {
+  const [count, setCount] = useState("Loading...");
+  const hasUpdated = useRef(false); 
 
-useEffect(() => {
-  // Prevent running multiple times in development
-  let hasRun = sessionStorage.getItem("hasRun");
-  if (!hasRun) {
-    try {
-      const storedCount = localStorage.getItem("visitorCount");
-      const newCount = storedCount ? parseInt(storedCount) + 1 : 1;
-      localStorage.setItem("visitorCount", newCount);
-      setCount(newCount);
-    } catch (err) {
-      setError(true);
-    }
-    sessionStorage.setItem("hasRun", "true");
-  } else {
-    // If already run this session, just read value
-    const storedCount = localStorage.getItem("visitorCount");
-    setCount(storedCount ? parseInt(storedCount) : 1);
-  }
-}, []);
+  useEffect(() => {
+    if (hasUpdated.current) return; 
+    hasUpdated.current = true;
+
+    const updateCount = async () => {
+      try {
+        console.log("Attempting to update visitor count...");
+        console.log("DB instance:", db); // Check if db is defined
+        
+        const docRef = doc(db, "siteData", "visitorCount");
+        console.log("Document reference created");
+        
+        const docSnap = await getDoc(docRef);
+        console.log("Document fetched:", docSnap.exists());
+
+        if (docSnap.exists()) {
+          const newCount = (docSnap.data().count || 0) + 1;
+          await setDoc(docRef, { count: newCount });
+          setCount(newCount);
+        } else {
+          await setDoc(docRef, { count: 1 });
+          setCount(1);
+        }
+        console.log("Count updated successfully");
+      } catch (error) {
+        console.error("Detailed error:", error);
+        console.error("Error code:", error.code);
+        console.error("Error message:", error.message);
+        setCount("Error");
+      }
+    };
+
+    updateCount();
+  }, []);
 
   return (
-    <div>
-      👁️
-      <span>
-        Visitor Count:{" "}
-        {error ? (
-          <span>Error</span>
-        ) : (
-          <span>{count}</span>
-        )}
-      </span>
+    <>
+     <div className="visitor-count">
+      <p>👀 Visitor Count: {count}</p>
+      
     </div>
+    <div className="mobile-visitor-count">
+      <p >👀 Visitor Count: {count}</p>
+    </div>
+    </>
+   
+
+    
   );
 }
-
-
-export default VisitorCounter;

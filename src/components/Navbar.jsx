@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router"; 
+import { Link } from "react-router";
 import VisitorCounter from "./VisitorCounter";
 
 const Navbar = () => {
@@ -9,14 +9,13 @@ const Navbar = () => {
 	return (
 		<div className="nav-sect">
 			<div className="nav-cont">
-				<Link to='/'>
-				   <img
-					className="logo"
-					src="/Logo.svg"
-					alt="Albert watch company clocks logo"
-				/>
+				<Link to="/">
+					<img
+						className="logo"
+						src="/Logo.svg"
+						alt="Albert watch company clocks logo"
+					/>
 				</Link>
-				
 
 				{/* Desktop Navigation */}
 				<div className="desktop-nav">
@@ -24,9 +23,9 @@ const Navbar = () => {
 						<Link to="/products">Products</Link>
 						<Link to="/technology">Technology</Link>
 						<Link to="/store-locator">Store Locator</Link>
+						<Link to="/gallery">Gallery</Link>
 						<Link to="/support">Support</Link>
 						<Link to="/contact">Contact</Link>
-						<Link to="/gallery">Gallery</Link>
 					</div>
 				</div>
 
@@ -63,15 +62,16 @@ const Navbar = () => {
 						<Link to="/store-locator" onClick={() => setMenu(false)}>
 							Store Locator
 						</Link>
+						<Link to="/gallery" onClick={() => setMenu(false)}>
+							Gallery
+						</Link>
 						<Link to="/support" onClick={() => setMenu(false)}>
 							Support
 						</Link>
 						<Link to="/contact" onClick={() => setMenu(false)}>
 							Contact
 						</Link>
-						<Link to="/gallery" onClick={() => setMenu(false)}>
-							Gallery
-						</Link>
+
 						<VisitorCounter />
 					</div>
 
